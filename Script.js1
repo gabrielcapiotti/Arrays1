@@ -1,0 +1,22 @@
+/*
+Criar um array e percorrê-lo utilizando o loop for
+a. Crie um array com o nome "nomes" e adicione 4 nomes de
+pessoas que você conhece
+b. Utilize o loop for para percorrer o array e exibir os nomes na
+tela
+*/
+
+const nomes = ["Gabriel", "Pandora", "Nêmesis", "Lilith"];
+
+for (let i = 0; i < nomes.length; i++) {
+    const listaNomesElemento = document.getElementById("listaNomes");
+
+    let liElemento = document.createElement("li");
+    liElemento.textContent = nomes[i];
+
+    listaNomesElemento.appendChild(liElemento);
+}
+
+
+
+
